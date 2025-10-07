@@ -1,3 +1,23 @@
+// ====== TOGGLE MOBILE MENU ======
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const dropdowns = document.querySelectorAll(".dropdown");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("open");
+  navLinks.classList.toggle("active");
+});
+
+// ====== MOBILE DROPDOWN TOGGLE ======
+dropdowns.forEach((drop) => {
+  drop.addEventListener("click", (e) => {
+    if (window.innerWidth <= 768) {
+      e.stopPropagation();
+      drop.classList.toggle("open");
+    }
+  });
+});
+
 const sessions = [
   {
     title: "HTML Basics",
