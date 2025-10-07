@@ -6,6 +6,7 @@
     --bootstrap-color: #563d7c;
     --trans-dur: 0.3s;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,9 +14,11 @@
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
-a{
+
+a {
     cursor: pointer;
 }
+
 .container {
     margin: 0 auto;
     width: 100%;
@@ -55,6 +58,7 @@ a{
         width: 1320px;
     }
 }
+
 /* end global rules */
 
 @font-face {
@@ -66,6 +70,7 @@ body {
     font-family: work-sans;
     background-color: #f4f6f8;
 }
+
 /* start navbar section */
 nav {
     background-color: white;
@@ -261,6 +266,7 @@ nav {
     border-left: 4px solid var(--js-color);
     border-right: 4px solid var(--js-color);
 }
+
 /* end nav bar section */
 /* start home section */
 /* ====== HOME SECTION ====== */
@@ -281,7 +287,8 @@ nav {
     line-height: 1.3;
     margin-bottom: 25px;
     transition: color var(--trans-dur) ease;
-    &:hover{
+
+    &:hover {
         color: var(--html-color);
     }
 }
@@ -333,6 +340,7 @@ nav {
         font-size: 0.95rem;
     }
 }
+
 /* end home section */
 /* start sessions sections */
 section {
@@ -536,6 +544,7 @@ section h2 {
         background-color: #c3b13f;
     }
 }
+
 /* End sessions sections */
 /* start resources section */
 #resources-section {
@@ -657,6 +666,7 @@ section h2 {
         padding: 18px;
     }
 }
+
 /* end resources section */
 /* ====== FOOTER SECTION ====== */
 .site-footer {
@@ -686,7 +696,7 @@ section h2 {
     line-height: 1.6;
     margin-bottom: 15px;
     max-width: 400px;
-margin-inline: auto;
+    margin-inline: auto;
 }
 
 .footer-column ul {
@@ -804,29 +814,36 @@ margin-inline: auto;
         font-size: 1.2rem;
     }
 }
-footer span{
+
+footer span {
     color: var(--css-color);
     font-weight: bold;
 }
-footer i{
+
+footer i {
     font-size: 25px;
 }
 
-.fa-github:hover{
-    color:#000;
+.fa-github:hover {
+    color: #000;
 }
-.fa-linkedin-in:hover{
-    color:#0A66C2;
+
+.fa-linkedin-in:hover {
+    color: #0A66C2;
 }
-.fa-facebook-f:hover{
-    color:#4267B2;
+
+.fa-facebook-f:hover {
+    color: #4267B2;
 }
-.fa-instagram:hover{
-    color:#E1306C;
+
+.fa-instagram:hover {
+    color: #E1306C;
 }
-.fa-globe:hover{
-    color:#00629B;
+
+.fa-globe:hover {
+    color: #00629B;
 }
-.fa-whatsapp:hover{
-    color:#25D366;
+
+.fa-whatsapp:hover {
+    color: #25D366;
 }

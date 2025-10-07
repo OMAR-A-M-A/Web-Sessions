@@ -40,7 +40,7 @@ const sessions = [
     img: "img/html5S1.png",
     url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session-1-copy",
     category: "html",
-    icon: "fa-solid fa-code"
+    icon: "fa-solid fa-code",
   },
   {
     title: "HTML Basics",
