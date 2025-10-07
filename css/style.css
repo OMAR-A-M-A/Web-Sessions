@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    scroll-padding-top: 30px;
+    scroll-padding-top: 80px;
 }
 
 .container {
@@ -54,8 +54,8 @@
         width: 1320px;
     }
 }
-
 /* end global rules */
+
 @font-face {
     font-family: "work-sans";
     src: url(../fonts/WorkSans-VariableFont_wght.ttf);
@@ -65,7 +65,7 @@ body {
     font-family: work-sans;
     background-color: #f4f6f8;
 }
-
+/* start nav bar section */
 nav {
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -199,6 +199,7 @@ nav {
 
     .nav-links li {
         width: 100%;
+        text-align: center;
     }
 
     .nav-links a {
@@ -259,7 +260,80 @@ nav {
     border-left: 4px solid var(--js-color);
     border-right: 4px solid var(--js-color);
 }
+/* end nav bar section */
+/* start home section */
+/* ====== HOME SECTION ====== */
+#home-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
 
+.home-container {
+    text-align: center;
+    max-width: 900px;
+}
+
+#home-section h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--css-color);
+    line-height: 1.3;
+    margin-bottom: 25px;
+    transition: color var(--trans-dur) ease;
+    &:hover{
+        color: var(--html-color);
+    }
+}
+
+#home-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    transition: color var(--trans-dur) ease;
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 992px) {
+    #home-section {
+        padding: 80px 0;
+    }
+
+    #home-section h1 {
+        font-size: 2rem;
+    }
+
+    #home-section p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #home-section {
+        padding: 70px 20px;
+    }
+
+    #home-section h1 {
+        font-size: 1.8rem;
+    }
+
+    #home-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #home-section h1 {
+        font-size: 1.6rem;
+    }
+
+    #home-section p {
+        font-size: 0.95rem;
+    }
+}
+/* end home section */
+/* start sessions sections */
 section {
     margin-bottom: 60px;
 }
@@ -461,3 +535,125 @@ section h2 {
         background-color: #c3b13f;
     }
 }
+/* End sessions sections */
+/* start resources section */
+#resources-section {
+    background-color: #f4f6f8;
+    margin: 80px 0 100px 0;
+}
+
+#resources-section h2 {
+    color: var(--css-color);
+    margin-bottom: 50px;
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    text-align: center;
+}
+
+.resource-category {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    transition: transform var(--trans-dur) ease, box-shadow var(--trans-dur) ease;
+}
+
+.resource-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.resource-category h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--bootstrap-color);
+    margin-bottom: 20px;
+    border-left: 4px solid var(--bootstrap-color);
+    padding-left: 10px;
+}
+
+.resource-category ul {
+    list-style: none;
+}
+
+.resource-category li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.resource-category li:last-child {
+    border-bottom: none;
+}
+
+.resource-category a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color var(--trans-dur) ease;
+}
+
+.resource-category a:hover {
+    color: var(--css-color);
+}
+
+.resource-category p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 992px) {
+    #resources-section {
+        padding: 80px 20px;
+    }
+
+    #resources-section h2 {
+        font-size: 60px;
+    }
+
+    .resource-category {
+        padding: 20px;
+    }
+
+    .resource-category h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #resources-section h2 {
+        font-size: 50px;
+    }
+
+    .resource-category h3 {
+        font-size: 1.4rem;
+    }
+
+    .resource-category a {
+        font-size: 1rem;
+    }
+
+    .resource-category p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #resources-section {
+        padding: 60px 15px;
+    }
+
+    #resources-section h2 {
+        font-size: 42px;
+    }
+
+    .resource-category {
+        padding: 18px;
+    }
+}
+/* end resources section */

@@ -27,7 +27,7 @@
             </button>
 
             <ul class="nav-links" id="nav-links">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#home-section" class="active">Home</a></li>
 
                 <li class="dropdown">
                     <a href="#">Sessions</a>
@@ -39,13 +39,30 @@
                     </ul>
                 </li>
 
-                <li><a href="#resources">Resources</a></li>
+                <li class="dropdown">
+                    <a href="#resources-section">Resources</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#official-docs">Official Docs</a></li>
+                        <li><a href="#youtube-channels">Youtube Channels</a></li>
+                        <li><a href="#design-tools">Design Tools</a></li>
+                    </ul>
+                </li>
                 <li><a href="#about">About Us</a></li>
             </ul>
         </div>
     </nav>
-
-
+    <!-- home section -->
+    <section id="home-section">
+        <div class="container home-container">
+            <h1>
+                The Front-End Committee at IEEE</h1>
+            <p>The Front-End Committee at IEEE focuses on teaching and developing skills in web design and front-end
+                development.Our goal is to help students understand the fundamentals of web technologies — from
+                HTML,CSS, and JavaScript to building real projects hands-on. We organize weekly learning
+                sessions covering different web concepts and encourage members to practice and grow through real-world
+                implementation.</p>
+        </div>
+    </section>
     <!-- HTML Section -->
     <section id="html-section">
         <div class="container">
@@ -85,6 +102,101 @@
             <div class="sessions-container" id="git-sessions"></div>
         </div>
     </section>
+    <!-- ====== RESOURCES SECTION ====== -->
+    <section id="resources-section">
+        <div class="container">
+            <h2>Resources</h2>
+
+            <!-- Category 1: Official Documentation -->
+            <div class="resource-category" id="official-docs">
+                <h3>Official Documentation</h3>
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
+                        <p>The most comprehensive resource for web standards, covering HTML, CSS, and JavaScript in
+                            depth.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+                        <p>A beginner-friendly site offering examples, exercises, and tutorials for web technologies.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="https://web.dev/?hl=ar" target="_blank">Web.Dev</a>
+                        <p>Your official guide from Google to learn and build modern, secure, and high-performance web
+                            experiences.</p>
+                    </li>
+                    <li>
+                        <a href="https://elzero.org/" target="_blank">ُElzero-Web-School</a>
+                        <p>One of the best Arabic resources for learning web development from zero to hero.</p>
+                    </li>
+                    <li>
+                        <a href="https://getbootstrap.com/docs/" target="_blank">Bootstrap Docs</a>
+                        <p>Official documentation for Bootstrap — includes setup, components, and layout guides.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category 2: YouTube Channels -->
+            <div class="resource-category" id="youtube-channels">
+                <h3>YouTube Channels</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/@TraversyMedia" target="_blank">Traversy Media</a>
+                        <p>High-quality tutorials on HTML, CSS, JavaScript, and full-stack projects for all levels.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@WebDevSimplified" target="_blank">Web Dev Simplified</a>
+                        <p>Focused JavaScript and React explanations that simplify complex web development topics.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank">SuperSimpleDev</a>
+                        <p>An excellent channel for beginners, offering practical, step-by-step tutorials on front-end
+                            development fundamentals.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@BroCodez" target="_blank">Bro Code</a>
+                        <p>A channel offering fast-paced, intensive tutorials for a wide variety of programming
+                            languages, famous for its full course in one video' format.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@ElzeroWebSchool" target="_blank">Elzero Web School</a>
+                        <p>The official channel for Elzero Web School, one of the best Arabic resources for learning web
+                            development from zero to
+                            hero.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Category 3: Design Tools -->
+            <div class="resource-category" id="design-tools">
+                <h3>Design Tools</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.figma.com/" target="_blank">Figma</a>
+                        <p>A collaborative UI/UX design platform used by teams to create and prototype interfaces.</p>
+                    </li>
+                    <li>
+                        <a href="https://coolors.co/" target="_blank">Coolors</a>
+                        <p>A powerful color palette generator for designers and developers to create beautiful themes.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                        <p>Free library of web-optimized fonts to enhance website typography and aesthetics.</p>
+                    </li>
+                    <li>
+                        <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                        <p>The web's leading icon library and toolkit, allowing you to add and easily customize
+                            thousands of icons with CSS.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
     <!-- js file -->
     <script src="js/script.js"></script>
 </body>
