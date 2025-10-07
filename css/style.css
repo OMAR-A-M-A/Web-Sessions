@@ -6,7 +6,6 @@
     --bootstrap-color: #563d7c;
     --trans-dur: 0.3s;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +13,9 @@
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
-
+a{
+    cursor: pointer;
+}
 .container {
     margin: 0 auto;
     width: 100%;
@@ -65,7 +66,7 @@ body {
     font-family: work-sans;
     background-color: #f4f6f8;
 }
-/* start nav bar section */
+/* start navbar section */
 nav {
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -657,3 +658,175 @@ section h2 {
     }
 }
 /* end resources section */
+/* ====== FOOTER SECTION ====== */
+.site-footer {
+    background-color: #222831;
+    color: #ccc;
+    padding: 60px 0 0;
+    font-family: work-sans;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 400px;
+margin-inline: auto;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color var(--trans-dur) ease;
+}
+
+.footer-column ul li a:hover {
+    color: var(--css-color);
+}
+
+/* ====== Social Links ====== */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ccc;
+    font-size: 1.3rem;
+    transition: color var(--trans-dur) ease, transform var(--trans-dur) ease;
+}
+
+.social-links a:hover {
+    color: var(--css-color);
+    transform: translateY(-3px);
+}
+
+/* ====== Personal Photo ====== */
+.personal-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--css-color);
+}
+
+.footer-column h4 {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* ====== COPYRIGHT BAR ====== */
+.footer-copyright {
+    border-top: 1px solid #444;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-copyright p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 992px) {
+    .footer-columns {
+        gap: 25px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .personal-photo {
+        margin: 0 auto 15px;
+    }
+
+    .footer-column ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-footer {
+        padding: 40px 0 0;
+    }
+
+    .footer-columns {
+        gap: 20px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.2rem;
+    }
+}
+footer span{
+    color: var(--css-color);
+    font-weight: bold;
+}
+footer i{
+    font-size: 25px;
+}
+
+.fa-github:hover{
+    color:#000;
+}
+.fa-linkedin-in:hover{
+    color:#0A66C2;
+}
+.fa-facebook-f:hover{
+    color:#4267B2;
+}
+.fa-instagram:hover{
+    color:#E1306C;
+}
+.fa-globe:hover{
+    color:#00629B;
+}
+.fa-whatsapp:hover{
+    color:#25D366;
+}
