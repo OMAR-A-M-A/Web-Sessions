@@ -45,8 +45,10 @@
     /* slide btn */
     --slider-bg: #ccc;
     --slider-thumb-bg: white;
-    --icon-color: #f0db4f; /* Yellow for Sun */
+    --icon-color: #f0db4f;
+    /* Yellow for Sun */
 }
+
 .dark-mode {
     /* ==== Brand / Theme Colors (Usually unchanged, but can be brightened) ==== */
     --html-color: #e86143;
@@ -103,9 +105,11 @@
     /* slidebtn */
     --slider-bg: #555;
     --slider-thumb-bg: #333;
-    --icon-color: #5070f5; /* Blue for Moon */
+    --icon-color: #5070f5;
+    /* Blue for Moon */
 
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -168,7 +172,7 @@ a {
 body {
     font-family: work-sans;
     background-color: var(--color-bg-light);
-    transition:  0.3s;
+    transition: 0.3s;
 }
 
 /* start navbar section */
@@ -221,6 +225,12 @@ nav {
     font-weight: 600;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 /* ====== DROPDOWN ====== */
 .dropdown {
     position: relative;
@@ -265,7 +275,6 @@ nav {
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
-    padding-right: 15px;
 }
 
 #menu-btn span {
@@ -280,6 +289,10 @@ nav {
 @media (max-width: 768px) {
     #menu-btn {
         display: flex;
+    }
+
+    .nav-actions {
+        padding-right: 15px;
     }
 
     .nav-links {
@@ -332,6 +345,7 @@ nav {
     .logo {
         padding-left: 15px;
     }
+
 }
 
 /* ====== ACTIVE MENU BUTTON (X animation) ====== */
@@ -786,9 +800,11 @@ section h2 {
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
-.footer-column h4{
+
+.footer-column h4 {
     color: var(--color-text-inverse);
 }
+
 .footer-column p {
     font-size: 1rem;
     color: var(--color-text-muted);
@@ -947,6 +963,7 @@ footer i {
 .fa-whatsapp:hover {
     color: var(--brand-whatsapp);
 }
+
 /* Styles for the Toggle Switch Container */
 .theme-switch {
     position: relative;
