@@ -1,12 +1,111 @@
 /* start global rules */
 :root {
+    /* ==== Brand / Theme Colors ==== */
     --html-color: #e34c26;
+    --html-color-hover: #973922;
     --css-color: #264de4;
+    --css-color-hover: #1a2f7f;
     --js-color: #f0db4f;
+    --js-color-hover: #c3b13f;
     --bootstrap-color: #563d7c;
-    --trans-dur: 0.3s;
-}
+    --bootstrap-color-hover: #33254a;
 
+    /* ==== Base UI Colors ==== */
+    --color-bg-base: #ffffff;
+    --color-bg-light: #f4f6f8;
+    --color-bg-subtle: #f9f9f9;
+    --color-bg-dark: #222831;
+
+    /* ==== Text Colors ==== */
+    --color-text-main: #333;
+    --color-text-secondary: #555;
+    --color-text-muted: #ccc;
+    --color-text-light: #999;
+    --color-text-inverse: #fff;
+
+    /* ==== Border / Divider Colors ==== */
+    --color-border-light: #eee;
+    --color-border-dark: #444;
+
+    /* ==== Shadows & Overlay ==== */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --overlay-dark: rgba(0, 0, 0, 0.141);
+
+    /* ==== Social Brand Colors ==== */
+    --brand-github: #000;
+    --brand-linkedin: #0A66C2;
+    --brand-facebook: #4267B2;
+    --brand-instagram: #E1306C;
+    --brand-globe: #00629B;
+    --brand-whatsapp: #25D366;
+
+    /* ==== General Transitions ==== */
+    --trans-dur: 0.3s;
+    /* slide btn */
+    --slider-bg: #ccc;
+    --slider-thumb-bg: white;
+    --icon-color: #f0db4f; /* Yellow for Sun */
+}
+.dark-mode {
+    /* ==== Brand / Theme Colors (Usually unchanged, but can be brightened) ==== */
+    --html-color: #e86143;
+    --html-color-hover: #973922;
+    --css-color: #5070f5;
+    --css-color-hover: #1a2f7f;
+    --js-color: #f7df75;
+    --js-color-hover: #c3b13f;
+    --bootstrap-color: #7a63a5;
+    --bootstrap-color-hover: #33254a;
+
+    /* ==== Base UI Colors (Inverted) ==== */
+    --color-bg-base: #121212;
+    /* Darkest background */
+    --color-bg-light: #1e1e1e;
+    /* Lighter surface (like cards) */
+    --color-bg-subtle: #2a2a2a;
+    /* Subtle background variations */
+    --color-bg-dark: #181818;
+    /* Used for footer, slightly different dark */
+
+    /* ==== Text Colors (Inverted) ==== */
+    --color-text-main: #e0e0e0;
+    /* Main light text */
+    --color-text-secondary: #b3b3b3;
+    /* Secondary light text */
+    --color-text-muted: #888888;
+    /* Muted text, still readable */
+    --color-text-light: #6f6f6f;
+    /* Very dim text */
+    --color-text-inverse: #fff;
+    /* For text on light backgrounds */
+
+    /* ==== Border / Divider Colors (Adjusted for dark UI) ==== */
+    --color-border-light: #333333;
+    /* Darker borders */
+    --color-border-dark: #555555;
+    /* Lighter borders in dark mode */
+
+    /* ==== Shadows & Overlay (Adjusted for dark UI) ==== */
+    /* Shadows are often replaced with lighter borders or surfaces in dark mode */
+    --shadow-light: rgba(0, 0, 0, 0.3);
+    --shadow-medium: rgba(0, 0, 0, 0.5);
+    --overlay-dark: rgba(255, 255, 255, 0.08);
+    /* Light overlay for images */
+
+    /* ==== Social Brand Colors (Unchanged) ==== */
+    --brand-github: #fff;
+    --brand-linkedin: #0A66C2;
+    --brand-facebook: #4267B2;
+    --brand-instagram: #E1306C;
+    --brand-globe: #00629B;
+    --brand-whatsapp: #25D366;
+    /* slidebtn */
+    --slider-bg: #555;
+    --slider-thumb-bg: #333;
+    --icon-color: #5070f5; /* Blue for Moon */
+
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -68,13 +167,14 @@ a {
 
 body {
     font-family: work-sans;
-    background-color: #f4f6f8;
+    background-color: var(--color-bg-light);
+    transition:  0.3s;
 }
 
 /* start navbar section */
 nav {
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg-base);
+    box-shadow: 0 2px 8px var(--shadow-light);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -107,7 +207,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #555;
+    color: var(--color-text-secondary);
     font-weight: 500;
     transition: color var(--trans-dur) ease;
 }
@@ -131,8 +231,8 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--color-bg-base);
+    box-shadow: 0 2px 8px var(--shadow-light);
     list-style: none;
     min-width: 180px;
     border-radius: 8px;
@@ -143,13 +243,13 @@ nav {
 .dropdown-content li a {
     display: block;
     padding: 10px 15px;
-    color: #555;
+    color: var(--color-text-secondary);
     text-decoration: none;
     transition: background var(--trans-dur);
 }
 
 .dropdown-content li a:hover {
-    background-color: #f4f6f8;
+    background-color: var(--color-bg-light);
     color: var(--css-color);
 }
 
@@ -172,7 +272,7 @@ nav {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: var(--color-text-main);
     transition: var(--trans-dur);
 }
 
@@ -187,7 +287,7 @@ nav {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: white;
+        background-color: var(--color-bg-base);
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
@@ -217,7 +317,7 @@ nav {
     .dropdown-content {
         position: static;
         box-shadow: none;
-        background-color: #f9f9f9;
+        background-color: var(--color-bg-subtle);
         width: 100%;
     }
 
@@ -268,10 +368,10 @@ nav {
 }
 
 /* end nav bar section */
+
 /* start home section */
-/* ====== HOME SECTION ====== */
 #home-section {
-    background-color: #ffffff;
+    background-color: var(--color-bg-base);
     padding: 100px 0;
 }
 
@@ -295,7 +395,7 @@ nav {
 
 #home-section p {
     font-size: 1.2rem;
-    color: #555;
+    color: var(--color-text-secondary);
     line-height: 1.6;
     margin: 0 auto;
     max-width: 800px;
@@ -342,20 +442,19 @@ nav {
 }
 
 /* end home section */
+
 /* start sessions sections */
 section {
     margin-bottom: 60px;
 }
 
 section h2 {
-
     margin-bottom: 40px;
     font-size: 80px;
     font-weight: 600;
     letter-spacing: -3px;
     text-align: center;
 }
-
 
 @media (max-width: 767px) {
     section h2 {
@@ -365,22 +464,18 @@ section h2 {
 
 #html-section h2 {
     color: var(--html-color);
-
 }
 
 #css-section h2 {
     color: var(--css-color);
-
 }
 
 #bootstrap-section h2 {
     color: var(--bootstrap-color);
-
 }
 
 #js-section h2 {
     color: var(--js-color);
-
 }
 
 .sessions-container {
@@ -391,9 +486,9 @@ section h2 {
 }
 
 .session-card {
-    background: white;
+    background: var(--color-bg-base);
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px var(--shadow-light);
     overflow: hidden;
     transition: var(--trans-dur) ease;
     display: flex;
@@ -407,14 +502,14 @@ section h2 {
 
 .session-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px var(--shadow-medium);
 }
 
 #html-section .session-card {
     border: 2px solid var(--html-color);
 
     &:hover {
-        border: 2px solid #973922;
+        border-color: var(--html-color-hover);
     }
 }
 
@@ -422,7 +517,7 @@ section h2 {
     border: 2px solid var(--css-color);
 
     &:hover {
-        border: 2px solid #1a2f7f;
+        border-color: var(--css-color-hover);
     }
 }
 
@@ -430,7 +525,7 @@ section h2 {
     border: 2px solid var(--bootstrap-color);
 
     &:hover {
-        border: 2px solid #33254a;
+        border-color: var(--bootstrap-color-hover);
     }
 }
 
@@ -438,7 +533,7 @@ section h2 {
     border: 2px solid var(--js-color);
 
     &:hover {
-        border: 2px solid #c3b13f;
+        border-color: var(--js-color-hover);
     }
 }
 
@@ -454,7 +549,7 @@ section h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.141);
+    background: var(--overlay-dark);
     transition: var(--trans-dur);
     z-index: 2;
     opacity: 0;
@@ -481,30 +576,30 @@ section h2 {
 }
 
 #html-section .session-content h3 {
-    color: var(--html-color)
+    color: var(--html-color);
 }
 
 #css-section .session-content h3 {
-    color: var(--css-color)
+    color: var(--css-color);
 }
 
 #bootstrap-section .session-content h3 {
-    color: var(--bootstrap-color)
+    color: var(--bootstrap-color);
 }
 
 #js-section .session-content h3 {
-    color: var(--js-color)
+    color: var(--js-color);
 }
 
 .session-content p {
-    color: #555;
+    color: var(--color-text-secondary);
     font-size: 1.1rem;
     line-height: 1.4;
     margin-bottom: 15px;
 }
 
 .session-card button {
-    color: white;
+    color: var(--color-text-inverse);
     border: none;
     padding: 10px;
     border-radius: 0 0 12px 12px;
@@ -517,7 +612,7 @@ section h2 {
     background-color: var(--html-color);
 
     &:hover {
-        background-color: #973922;
+        background-color: var(--html-color-hover);
     }
 }
 
@@ -525,7 +620,7 @@ section h2 {
     background-color: var(--css-color);
 
     &:hover {
-        background-color: #1a2f7f;
+        background-color: var(--css-color-hover);
     }
 }
 
@@ -533,7 +628,7 @@ section h2 {
     background-color: var(--bootstrap-color);
 
     &:hover {
-        background-color: #33254a;
+        background-color: var(--bootstrap-color-hover);
     }
 }
 
@@ -541,14 +636,15 @@ section h2 {
     background-color: var(--js-color);
 
     &:hover {
-        background-color: #c3b13f;
+        background-color: var(--js-color-hover);
     }
 }
 
 /* End sessions sections */
+
 /* start resources section */
 #resources-section {
-    background-color: #f4f6f8;
+    background-color: var(--color-bg-light);
     margin: 80px 0 100px 0;
 }
 
@@ -562,8 +658,8 @@ section h2 {
 }
 
 .resource-category {
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg-base);
+    box-shadow: 0 2px 8px var(--shadow-light);
     border-radius: 12px;
     padding: 25px 30px;
     margin-bottom: 30px;
@@ -572,7 +668,7 @@ section h2 {
 
 .resource-category:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px var(--shadow-medium);
 }
 
 .resource-category h3 {
@@ -590,7 +686,7 @@ section h2 {
 
 .resource-category li {
     padding: 15px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-border-light);
 }
 
 .resource-category li:last-child {
@@ -599,7 +695,7 @@ section h2 {
 
 .resource-category a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-text-main);
     font-weight: 600;
     font-size: 1.1rem;
     transition: color var(--trans-dur) ease;
@@ -610,7 +706,7 @@ section h2 {
 }
 
 .resource-category p {
-    color: #555;
+    color: var(--color-text-secondary);
     font-size: 1rem;
     line-height: 1.5;
     margin-top: 5px;
@@ -668,10 +764,11 @@ section h2 {
 }
 
 /* end resources section */
+
 /* ====== FOOTER SECTION ====== */
 .site-footer {
-    background-color: #222831;
-    color: #ccc;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-muted);
     padding: 60px 0 0;
     font-family: work-sans;
 }
@@ -684,15 +781,17 @@ section h2 {
 }
 
 .footer-column h3 {
-    color: #fff;
+    color: var(--color-text-inverse);
     font-weight: 600;
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
-
+.footer-column h4{
+    color: var(--color-text-inverse);
+}
 .footer-column p {
     font-size: 1rem;
-    color: #ccc;
+    color: var(--color-text-muted);
     line-height: 1.6;
     margin-bottom: 15px;
     max-width: 400px;
@@ -709,7 +808,7 @@ section h2 {
 }
 
 .footer-column ul li a {
-    color: #ccc;
+    color: var(--color-text-muted);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -728,7 +827,7 @@ section h2 {
 }
 
 .social-links a {
-    color: #ccc;
+    color: var(--color-text-muted);
     font-size: 1.3rem;
     transition: color var(--trans-dur) ease, transform var(--trans-dur) ease;
 }
@@ -749,11 +848,12 @@ section h2 {
 }
 
 .footer-column h4 {
-    color: #fff;
+    color: var(--color-text-inverse);
     margin-bottom: 5px;
     font-size: 1.1rem;
 }
 
+/* This selector was duplicated, so I've consolidated it */
 .footer-column p {
     margin-bottom: 10px;
     font-size: 0.95rem;
@@ -761,14 +861,14 @@ section h2 {
 
 /* ====== COPYRIGHT BAR ====== */
 .footer-copyright {
-    border-top: 1px solid #444;
+    border-top: 1px solid var(--color-border-dark);
     text-align: center;
     padding: 20px 0;
 }
 
 .footer-copyright p {
     font-size: 0.9rem;
-    color: #999;
+    color: var(--color-text-light);
 }
 
 /* ====== RESPONSIVENESS ====== */
@@ -825,25 +925,103 @@ footer i {
 }
 
 .fa-github:hover {
-    color: #000;
+    color: var(--brand-github);
 }
 
 .fa-linkedin-in:hover {
-    color: #0A66C2;
+    color: var(--brand-linkedin);
 }
 
 .fa-facebook-f:hover {
-    color: #4267B2;
+    color: var(--brand-facebook);
 }
 
 .fa-instagram:hover {
-    color: #E1306C;
+    color: var(--brand-instagram);
 }
 
 .fa-globe:hover {
-    color: #00629B;
+    color: var(--brand-globe);
 }
 
 .fa-whatsapp:hover {
-    color: #25D366;
+    color: var(--brand-whatsapp);
+}
+/* Styles for the Toggle Switch Container */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+}
+
+/* Hide the default HTML checkbox */
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider track */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--slider-bg);
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+/* The slider thumb (the circle) */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--slider-thumb-bg);
+    border-radius: 50%;
+    transition: 0.4s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* The magic: Move the thumb when the checkbox is checked */
+input:checked+.slider::before {
+    transform: translateX(26px);
+}
+
+/* Icon Styling */
+.slider i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--icon-color);
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.sun-icon {
+    left: 7px;
+    opacity: 1;
+    /* Visible by default */
+}
+
+.moon-icon {
+    right: 7px;
+    opacity: 0;
+    /* Hidden by default */
+}
+
+/* Show/hide icons based on the state */
+input:checked+.slider .sun-icon {
+    opacity: 0;
+}
+
+input:checked+.slider .moon-icon {
+    opacity: 1;
 }

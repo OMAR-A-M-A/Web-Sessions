@@ -17,6 +17,43 @@ dropdowns.forEach((drop) => {
     }
   });
 });
+// Get the necessary elements from the DOM
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+// Function to apply the saved theme on page load
+const applySavedTheme = () => {
+  const savedTheme = localStorage.getItem('theme');
+  
+  // If a theme is saved in localStorage
+  if (savedTheme) {
+    body.classList.add(savedTheme);
+    // If the saved theme is dark, check the toggle
+    if (savedTheme === 'dark-mode') {
+      darkModeToggle.checked = true;
+    }
+  }
+};
+
+// Function to toggle the theme and save the preference
+const toggleTheme = () => {
+  // Toggle the 'dark-mode' class on the body
+  body.classList.toggle('dark-mode');
+
+  // Check if dark mode is currently active
+  if (body.classList.contains('dark-mode')) {
+    // If yes, save 'dark-mode' to localStorage
+    localStorage.setItem('theme', 'dark-mode');
+  } else {
+    // If no, remove the theme from localStorage
+    localStorage.removeItem('theme');
+  }
+};
+// Add event listener for the toggle switch
+darkModeToggle.addEventListener('change', toggleTheme);
+
+// Apply the saved theme when the page loads
+document.addEventListener('DOMContentLoaded', applySavedTheme);
 
 const sessions = [
   {
