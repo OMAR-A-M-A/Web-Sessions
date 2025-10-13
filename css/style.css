@@ -283,6 +283,7 @@ nav {
     height: 3px;
     background-color: var(--color-text-main);
     transition: var(--trans-dur);
+    transform-origin: center;
 }
 
 /* ====== MOBILE STYLES ====== */
@@ -350,7 +351,7 @@ nav {
 
 /* ====== ACTIVE MENU BUTTON (X animation) ====== */
 #menu-btn.open span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
+    transform: rotate(45deg) translateY(11px);
 }
 
 #menu-btn.open span:nth-child(2) {
@@ -358,7 +359,7 @@ nav {
 }
 
 #menu-btn.open span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
+    transform: rotate(-45deg) translateY(-11px);
 }
 
 #html-section .container {
