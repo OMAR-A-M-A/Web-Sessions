@@ -56,14 +56,14 @@ darkModeToggle.addEventListener('change', toggleTheme);
 document.addEventListener('DOMContentLoaded', applySavedTheme);
 
 const sessions = [
-  // {
-  //   title: "HTML Basics",
-  //   topics: "Introduction to tags, elements, attributes, and structure.",
-  //   img: "img/html5S1.png",
-  //   url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session-1-copy",
-  //   category: "html",
-  //   icon: "fa-solid fa-code",
-  // },
+  {
+    title: "Session-0",
+    topics: "Intro to the Web, HTTP Vs HTTPS, IP Address, Domain, Hosting, URL, SEO, Accessibility, Inspect, Essential References.",
+    img: "img\\html\\html-0.jpg",
+    url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session-0",
+    category: "html",
+    icon: "fa-solid fa-globe",
+  },
 ];
 
 function displaySessions() {
