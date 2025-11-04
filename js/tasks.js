@@ -2,39 +2,22 @@
 const bestTasks = [
   {
     category: "html",
-    session: "Session 1",
+    session: "Session-0",
     tasks: [
-      { name: "Task 1 by Ahmed Ali", url: `img\\html\\html-1.png` },
-      { name: "Task 2 by Mariam Hassan", url: "#" },
+      {
+        name: "Best Task: Adham Nabil ",
+        url: `docs\\session-0\\Web Fundamentals Report-Adham-Nabil.pdf`,
+        icon: "fa-solid fa-star",
+      },
+      {
+        name: "Ali Mohamed",
+        url: `docs\\session-0\\Ali_Mohamed_Task0.pdf`,
+      },
+      {
+        name: "Nesma Hesham",
+        url: `docs\\session-0\\Session-0-Nesma-Hesham-Fathy.pdf`,
+      },
     ],
-  },
-  {
-    category: "html",
-    session: "Session 2",
-    tasks: [{ name: "Task 1 by Sara Ahmed", url: "#" }],
-  },
-  {
-    category: "css",
-    session: "Session 1",
-    tasks: [{ name: "Task 1 by Omar Khaled", url: "#" }],
-  },
-  {
-    category: "js",
-    session: "Session 1",
-    tasks: [
-      { name: "Task 1 by Hossam Adel", url: "#" },
-      { name: "Task 2 by Yara Tarek", url: "#" },
-    ],
-  },
-  {
-    category: "bootstrap",
-    session: "Session 1",
-    tasks: [{ name: "Task 1 by Omar Khaled", url: "#" }],
-  },
-  {
-    category: "react",
-    session: "Session 1",
-    tasks: [{ name: "Task 1 by Mostafa Nasser", url: "#" }],
   },
 ];
 
@@ -62,7 +45,14 @@ function displayBestTasks() {
       const a = document.createElement("a");
       a.href = task.url;
       a.target = "_blank";
-      a.textContent = task.name;
+        if (task.icon) {
+          const icon = document.createElement("i");
+          icon.className = task.icon;
+          icon.style.color = "gold";
+          a.appendChild(icon);
+          a.insertAdjacentText("beforeend", " ");
+        }
+      a.append(task.name);
       li.appendChild(a);
       ul.appendChild(li);
     });
