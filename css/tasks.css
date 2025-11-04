@@ -1,0 +1,215 @@
+/* ========== BEST TASKS PAGE ========== */
+#best-tasks {
+    background-color: var(--color-bg-light);
+}
+
+.container section{
+    padding: 0px 20px;
+}
+
+/* Accordion Base */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    background: var(--color-bg-base);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-light);
+    overflow: hidden;
+}
+
+/* Accordion Buttons */
+.accordion-button {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-main);
+    cursor: pointer;
+    padding: 18px 25px;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color var(--trans-dur), color var(--trans-dur);
+    position: relative;
+}
+
+.accordion-button::after {
+    content: '+';
+    position: absolute;
+    right: 25px;
+    font-size: 1.4rem;
+    transition: transform var(--trans-dur);
+}
+
+.accordion-button.active::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.accordion-button:hover {
+    background-color: var(--color-bg-light);
+}
+#html-section .accordion-button{
+    border: 1px solid var(--html-color);
+}
+#css-section .accordion-button {
+    border: 1px solid var(--css-color);
+}
+#js-section .accordion-button {
+    border: 1px solid var(--js-color);
+}
+#bootstrap-section .accordion-button {
+    border: 1px solid var(--bootstrap-color);
+}
+#react-section .accordion-button {
+    border: 1px solid var(--react-color);
+}
+/* Active button styles by section */
+#html-section .accordion-button.active {
+    background-color: var(--html-color);
+    color: var(--color-text-inverse);
+}
+
+#css-section .accordion-button.active {
+    background-color: var(--css-color);
+    color: var(--color-text-inverse);
+}
+
+#js-section .accordion-button.active {
+    background-color: var(--js-color);
+    color: var(--color-bg-dark);
+}
+
+#bootstrap-section .accordion-button.active {
+    background-color: var(--bootstrap-color);
+    color: var(--color-text-inverse);
+}
+
+#react-section .accordion-button.active {
+    background-color: var(--react-color);
+    color: var(--color-bg-dark);
+}
+
+/* Accordion Panels */
+.panel {
+    background-color: var(--color-bg-base);
+    padding: 0 25px;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.4s ease-out;
+    border-radius: 10px;
+
+}
+.panel.open {
+    padding: 0 25px 20px 25px;
+}
+#html-section .panel.open{
+    border: 1px solid var(--html-color);
+}
+#css-section .panel.open {
+    border: 1px solid var(--css-color);
+}
+#js-section .panel.open {
+    border: 1px solid var(--js-color);
+}
+#bootstrap-section .panel.open {
+    border: 1px solid var(--bootstrap-color);
+}
+#react-section .panel.open {
+    border: 1px solid var(--react-color);
+}
+.panel ul {
+    list-style: none;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel ul li {
+    padding: 20px 0px;
+    font-size: large;
+}
+#html-section .panel ul li:not(:last-child){
+    border-bottom:1px solid var(--html-color);
+}
+#css-section .panel ul li:not(:last-child) {
+    border-bottom: 1px solid var(--css-color);
+}
+#js-section .panel ul li:not(:last-child) {
+    border-bottom: 1px solid var(--js-color);
+}
+#bootstrap-section .panel ul li:not(:last-child) {
+    border-bottom: 1px solid var(--bootstrap-color);
+}
+#react-section .panel ul li:not(:last-child) {
+    border-bottom: 1px solid var(--react-color);
+}
+.panel a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--trans-dur);
+}
+
+.panel a:hover {
+    color: var(--css-color);
+}
+
+/* Headings */
+.container section {
+    margin-bottom: 60px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.container #html-section  {
+    margin-top: 60px;
+    border: 2px solid var(--html-color);
+}
+
+.container #css-section  {
+    border: 2px solid var(--css-color);
+}
+
+.container #bootstrap-section  {
+    border: 2px solid var(--bootstrap-color);
+}
+
+.container #js-section  {
+    border: 2px solid var(--js-color);
+}
+.container #react-section {
+    border: 2px solid var(--react-color);
+}
+section h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+@media (max-width: 767px) {
+    section h2 {
+    font-size: 1.93rem;
+    }
+}
+/* Color by Section */
+#html-section h2 {
+    color: var(--html-color);
+}
+
+#css-section h2 {
+    color: var(--css-color);
+}
+
+#js-section h2 {
+    color: var(--js-color);
+}
+
+#bootstrap-section h2 {
+    color: var(--bootstrap-color);
+}
+
+#react-section h2 {
+    color: var(--react-color);
+}
