@@ -8,6 +8,15 @@ const sessions = [
     category: "html",
     icon: "fa-solid fa-globe",
   },
+  {
+    title: "Session-1",
+    topics:
+      "What is HTML, Basic Structuer, Headings, comments, paragraphs, Block Vs Inline Elements, Formatting Elements, Links",
+    img: "img\\html\\html-1.png",
+    url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session_1",
+    category: "html",
+    icon: "fa-solid fa-code",
+  },
 ];
 
 function displaySessions() {
