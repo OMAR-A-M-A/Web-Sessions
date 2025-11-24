@@ -17,6 +17,15 @@ const sessions = [
     category: "html",
     icon: "fa-solid fa-code",
   },
+  {
+    title: "Session-2",
+    topics:
+      "Images, Lists(ordered, unordered, description), Div, Span, tables, Entities",
+    img: "img\\html\\html-2.png",
+    url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session-7feffd8f-182c-415b-bd42-d14644c832e0",
+    category: "html",
+    icon: "fa-solid fa-laptop-code",
+  },
 ];
 
 function displaySessions() {
