@@ -6,16 +6,45 @@ const bestTasks = [
     tasks: [
       {
         name: "Best Task: Adham Nabil ",
-        url: `docs\\session-0\\Web Fundamentals Report-Adham-Nabil.pdf`,
+        url: `docs/html/session-0/Web Fundamentals Report-Adham-Nabil.pdf`,
         icon: "fa-solid fa-star",
       },
       {
         name: "Ali Mohamed",
-        url: `docs\\session-0\\Ali_Mohamed_Task0.pdf`,
+        url: `docs/html/session-0/Ali_Mohamed_Task0.pdf`,
       },
       {
         name: "Nesma Hesham",
-        url: `docs\\session-0\\Session-0-Nesma-Hesham-Fathy.pdf`,
+        url: `docs/html/session-0/Session-0-Nesma-Hesham-Fathy.pdf`,
+      },
+    ],
+  },
+  {
+    category: "html",
+    session: "Session-1",
+    tasks: [
+      {
+        name: "Best Task: Huda-Magdy",
+        url: `docs/html/session-1/huda-magdy-Task2.pdf`,
+        icon: "fa-solid fa-star",
+      },
+      {
+        name: "Adham Nabil",
+        url: `docs/html/session-1/adham-nabil-Modern-HTML-Essentials.pdf`,
+        icon: "fa-solid fa-star",
+      },
+      {
+        name: "Mohamed Kasem",
+        url: `docs/html/session-1/Muhammed Kasem-IEEE task-02.pdf`,
+        icon: "fa-solid fa-star",
+      },
+      {
+        name: "Habiba Eslam",
+        url: `docs/html/session-1/habiba-eslam-task-2.pdf`,
+      },
+      {
+        name: "Abdelrahman Samir",
+        url: `docs/html/session-1/abdelrahman-samir-Session-2.pdf`,
       },
     ],
   },
@@ -45,13 +74,13 @@ function displayBestTasks() {
       const a = document.createElement("a");
       a.href = task.url;
       a.target = "_blank";
-        if (task.icon) {
-          const icon = document.createElement("i");
-          icon.className = task.icon;
-          icon.style.color = "gold";
-          a.appendChild(icon);
-          a.insertAdjacentText("beforeend", " ");
-        }
+      if (task.icon) {
+        const icon = document.createElement("i");
+        icon.className = task.icon;
+        icon.style.color = "gold";
+        a.appendChild(icon);
+        a.insertAdjacentText("beforeend", " ");
+      }
       a.append(task.name);
       li.appendChild(a);
       ul.appendChild(li);
@@ -76,9 +105,19 @@ function displayBestTasks() {
   const buttons = document.querySelectorAll(".accordion-button");
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
+      buttons.forEach((otherBtn) => {
+        if (otherBtn !== btn) {
+          otherBtn.classList.remove("active");
+          const otherPanel = otherBtn.nextElementSibling;
+          otherPanel.classList.remove("open");
+          otherPanel.style.maxHeight = null;
+        }
+      });
+
       btn.classList.toggle("active");
       const panel = btn.nextElementSibling;
       panel.classList.toggle("open");
+
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
