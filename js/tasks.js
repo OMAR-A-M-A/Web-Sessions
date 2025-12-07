@@ -6,16 +6,16 @@ const bestTasks = [
     tasks: [
       {
         name: "Best Task: Adham Nabil ",
-        url: `docs/html/session-0/Web Fundamentals Report-Adham-Nabil.pdf`,
+        url: `https://drive.google.com/file/d/1aAoMRlQDOrxLc7jKfZ4kS8vOmcSY_-Eq/view?usp=sharing`,
         icon: "fa-solid fa-star",
       },
       {
         name: "Ali Mohamed",
-        url: `docs/html/session-0/Ali_Mohamed_Task0.pdf`,
+        url: `https://drive.google.com/file/d/1sk3FORs7afzsqSdZpEsFthYMRmeJ-tBA/view?usp=sharing`,
       },
       {
         name: "Nesma Hesham",
-        url: `docs/html/session-0/Session-0-Nesma-Hesham-Fathy.pdf`,
+        url: `https://drive.google.com/file/d/1XgUfdhSY2e3Hgy61ofxIPgaLpTT4Tj1v/view?usp=sharing`,
       },
     ],
   },
@@ -25,26 +25,26 @@ const bestTasks = [
     tasks: [
       {
         name: "Best Task: Huda-Magdy",
-        url: `docs/html/session-1/huda-magdy-Task2.pdf`,
+        url: `https://drive.google.com/file/d/12SpYW2tEKS5Hc1skw835jqvdODwFw-HZ/view?usp=sharing`,
         icon: "fa-solid fa-star",
       },
       {
         name: "Adham Nabil",
-        url: `docs/html/session-1/adham-nabil-Modern-HTML-Essentials.pdf`,
+        url: `https://drive.google.com/file/d/1WNk0DTZg_OPleEt2c1ipL8exzDaKvPZM/view?usp=sharing`,
         icon: "fa-solid fa-star",
       },
       {
         name: "Mohamed Kasem",
-        url: `docs/html/session-1/Muhammed Kasem-IEEE task-02.pdf`,
+        url: `https://drive.google.com/file/d/1KOMNP5y81Mogo7lmlmN_keWBYO95xuBl/view?usp=sharing`,
         icon: "fa-solid fa-star",
       },
       {
         name: "Habiba Eslam",
-        url: `docs/html/session-1/habiba-eslam-task-2.pdf`,
+        url: `https://drive.google.com/file/d/1_lg_pyqXM3HiI6rjFkanrsRQ7U6APogh/view?usp=sharing`,
       },
       {
         name: "Abdelrahman Samir",
-        url: `docs/html/session-1/abdelrahman-samir-Session-2.pdf`,
+        url: `https://drive.google.com/file/d/1_rCIc5V7RXUiH1MSdvPmvmiGgcn_oD8f/view?usp=sharing`,
       },
     ],
   },
