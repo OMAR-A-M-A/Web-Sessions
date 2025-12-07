@@ -3,7 +3,7 @@ const sessions = [
     title: "Session-0",
     topics:
       "Intro to the Web, HTTP Vs HTTPS, IP Address, Domain, Hosting, URL, SEO, Accessibility, Inspect, Essential References.",
-    img: "img\\html\\html-0.jpg",
+    img: "img/html/html-0.jpg",
     url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session-0",
     category: "html",
     icon: "fa-solid fa-globe",
@@ -11,8 +11,8 @@ const sessions = [
   {
     title: "Session-1",
     topics:
-      "What is HTML, Basic Structuer, Headings, comments, paragraphs, Block Vs Inline Elements, Formatting Elements, Links",
-    img: "img\\html\\html-1.png",
+      "What is HTML, Basic Structure, Headings, comments, paragraphs, Block Vs Inline Elements, Formatting Elements, Links",
+    img: "img/html/html-1.png",
     url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session_1",
     category: "html",
     icon: "fa-solid fa-code",
@@ -21,10 +21,19 @@ const sessions = [
     title: "Session-2",
     topics:
       "Images, Lists(ordered, unordered, description), Div, Span, tables, Entities",
-    img: "img\\html\\html-2.png",
-    url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session-7feffd8f-182c-415b-bd42-d14644c832e0",
+    img: "img/html/html-2.png",
+    url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML5-Session-2",
     category: "html",
     icon: "fa-solid fa-laptop-code",
+  },
+  {
+    title: "Session-3&4",
+    topics:
+      "Semantic Elements, Multimedia Elements, Forms Structure, Input Types, Advanced Form Elements, Form Attributes & Validation",
+    img: "img/html/html-3&4.png",
+    url: "https://appflowy.com/90507d36-0c51-4ff3-8366-1318cada01ae/HTML-Session-3-4",
+    category: "html",
+    icon: "fa-solid fa-file-code",
   },
 ];
 
