@@ -44,6 +44,15 @@ const sessions = [
     category: "css",
     icon: "fa-brands fa-css",
   },
+  {
+    title: "Session-2",
+    topics:
+      "Units, Root & CSS Variables, Typography (Fonts, Google Fonts, @font-face), Font Awesome (CDN & Self-Hosted), Pseudo-Classesو Pseudo-Elements",
+    img: "img/css/css-2.png",
+    url: "https://generated-fibre-c3a.notion.site/CSS-Session-2-2db2b43457f3807a96aaf409d701e450?pvs=74",
+    category: "css",
+    icon: "fa-brands fa-fonticons",
+  },
 ];
 
 function displaySessions() {
