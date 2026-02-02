@@ -52,7 +52,7 @@ const sessions = [
     url: "https://generated-fibre-c3a.notion.site/CSS-Session-2-2db2b43457f3807a96aaf409d701e450?pvs=74",
     category: "css",
     icon: "fa-brands fa-fonticons",
-  },
+  }, 
   {
     title: "Session-3",
     topics:
