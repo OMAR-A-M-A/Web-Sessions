@@ -47,11 +47,20 @@ const sessions = [
   {
     title: "Session-2",
     topics:
-      "Units, Root & CSS Variables, Typography (Fonts, Google Fonts, @font-face), Font Awesome (CDN & Self-Hosted), Pseudo-Classesو Pseudo-Elements",
+      "Units, Root & CSS Variables, Typography (Fonts, Google Fonts, @font-face), Font Awesome (CDN & Self-Hosted), Pseudo-Classes, Pseudo-Elements",
     img: "img/css/css-2.png",
     url: "https://generated-fibre-c3a.notion.site/CSS-Session-2-2db2b43457f3807a96aaf409d701e450?pvs=74",
     category: "css",
     icon: "fa-brands fa-fonticons",
+  },
+  {
+    title: "Session-3",
+    topics:
+      "Position, Flexbox Fundamentals (Flex Container vs Items, Main & Cross Axis), Flex Container Properties, Flex Item Properties",
+    img: "img/css/css-3.png",
+    url: "https://generated-fibre-c3a.notion.site/CSS-Session-3-2e02b43457f3802cae0befdda956f8bf?pvs=74",
+    category: "css",
+    icon: "fa-solid fa-layer-group",
   },
 ];
 
