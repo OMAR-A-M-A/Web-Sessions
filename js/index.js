@@ -52,7 +52,7 @@ const sessions = [
     url: "https://generated-fibre-c3a.notion.site/CSS-Session-2-2db2b43457f3807a96aaf409d701e450?pvs=74",
     category: "css",
     icon: "fa-brands fa-fonticons",
-  }, 
+  },
   {
     title: "Session-3",
     topics:
@@ -61,6 +61,15 @@ const sessions = [
     url: "https://generated-fibre-c3a.notion.site/CSS-Session-3-2e02b43457f3802cae0befdda956f8bf?pvs=74",
     category: "css",
     icon: "fa-solid fa-layer-group",
+  },
+  {
+    title: "Session-4",
+    topics:
+      "CSS Grid Fundamentals, Grid Container Properties, Grid Alignment, Grid Template Areas & Page Layout Mapping, Grid Item Positioning",
+    img: "img/css/css-4.png",
+    url: "https://generated-fibre-c3a.notion.site/CSS-Session-4-2ff2b43457f38016aa36e8f42f3471d5",
+    category: "css",
+    icon: "fa-solid fa-border-top-left",
   },
 ];
 
