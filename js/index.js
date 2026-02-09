@@ -71,6 +71,15 @@ const sessions = [
     category: "css",
     icon: "fa-solid fa-border-top-left",
   },
+  {
+    title: "Session-5",
+    topics:
+      "Transform, CSS Transition, CSS Animations, Responsive Web Design, Media Queries & Breakpoints, Flexbox & Grid Responsive Integration, Mobile-First vs Desktop-First Strategy",
+    img: "img/css/css-5.png",
+    url: "https://generated-fibre-c3a.notion.site/CSS-Session-5-3022b43457f38018a099dbf26a66591a?pvs=74",
+    category: "css",
+    icon: "fa-solid fa-maximize",
+  },
 ];
 
 function displaySessions() {
