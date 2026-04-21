@@ -80,6 +80,15 @@ const sessions = [
     category: "css",
     icon: "fa-solid fa-maximize",
   },
+  {
+    title: "Session-1",
+    topics:
+      "Introduction to JavaScript, Object-Based vs. Class-Based, Interpreted vs. Compiled (JIT), Variables & Declarations, Primitive Data Types & Type Casting, Control Flow, Loops, Functions",
+    img: "img/JS/js-1.png",
+    url: "https://generated-fibre-c3a.notion.site/JavaScript-Session-1-32e2b43457f380259850db9efeafc4d6",
+    category: "js",
+    icon: "fa-solid fa-terminal",
+  },
 ];
 
 function displaySessions() {

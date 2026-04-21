@@ -208,6 +208,7 @@ section h2 {
 
 #js-section .session-card button {
     background-color: var(--js-color);
+    color: #000000;
 
     &:hover {
         background-color: var(--js-color-hover);
