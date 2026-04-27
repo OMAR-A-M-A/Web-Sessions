@@ -89,6 +89,15 @@ const sessions = [
     category: "js",
     icon: "fa-solid fa-terminal",
   },
+  {
+    title: "Session-2",
+    topics:
+      "Arrays & Methods, Objects & Key-Value Structure, this Keyword (Regular vs Arrow Functions), Value vs Reference, Spread & Rest Operators, Destructuring, Advanced Loops, Set & Map",
+    img: "img/JS/js-2.png",
+    url: "https://generated-fibre-c3a.notion.site/JavaScript-Session-2-34e2b43457f380b58700ec98c8f72abf",
+    category: "js",
+    icon: "fa-brands fa-dev",
+  },
 ];
 
 function displaySessions() {
