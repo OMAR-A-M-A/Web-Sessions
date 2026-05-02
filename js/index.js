@@ -98,6 +98,15 @@ const sessions = [
     category: "js",
     icon: "fa-brands fa-dev",
   },
+  {
+    title: "Session-3",
+    topics:
+      "Higher-Order Functions, forEach Method, map Method, filter Method, find & findIndex Methods, some & every Methods, reduce Method, Real-World Examples (Search Filter, Cart Logic, API Data Cleaning), Method Chaining",
+    img: "img/JS/js-3.png",
+    url: "https://generated-fibre-c3a.notion.site/JavaScript-Session-3-3542b43457f38020899dd6a7aad58861",
+    category: "js",
+    icon: "fa-solid fa-file",
+  },
 ];
 
 function displaySessions() {
